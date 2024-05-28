@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Dancing Script";
+}
+.image-pc{
+  opacity: 100%;
+  visibility: visible;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-pc .img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.image-pc .imgbae{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.image-section {
+    opacity: 0%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    height: 1920px; /* Adjust height as needed */
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: cover; /* Ensure images fill the section */
+}
+
+.rsvp,
+.gifts{
+    background: #ffffff;
+    object-fit: cover;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    display: block;
+    text-align: center;
+    background-image: url('/img/bg.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-attachment: center, center;
+    height: 100%;
+    width: 100%;
+}
+.gifts{
+    padding-top: 5rem;
+    display: none;
+}
+.rspv p{
+    font-size: 0.5rem;
+    font-weight: 300;
+}
+.rspv h2{
+    color: blue;
+    font-size: 4.5rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+}
+.rspv form label{
+    color: white;
+}
+.countdown{
+  text-align: center;
+  display: none;
+}
+.rspv btn{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+
+/* Media query for mobile viewports (adjust breakpoint as needed) */
+@media only screen and (max-width: 768px) {
+    .image-section {
+        opacity: 100%;
+        visibility: visible;
+        height: 1920px; 
+        object-fit: cover;
+        width: 100%;
+        display: flex;
+        height: 100%;
+        /* Adjust height for mobile */
+    }
+    .image-pc{
+      opacity: 0%;
+      visibility: hidden;
+    }
+    .image{
+      display: none;
+    }
+    .imgbae{
+      display: none;
+    }
+    .countdown{
+      text-align: center;
+      display: none;
+    }
+    .countdown .itung{
+      background-image: url(/img/bgmob.png);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding-top: 10rem;
+      padding-bottom: 1.5rem;
+      display: block;
+      text-align: center
+    }
+    .countdown .itung h1{
+      font-family: url(/SEGO.ttf);
+      font-weight: 400;
+      color: #1f3f70;
+    }
+  .rsvp,
+  .gifts{
+    background-size: cover;
+    object-fit: cover;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    background-image: url('/img/bgmob.png');
+    text-align: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-attachment: center, center;
+     }
+  .gifts{
+    display: none;
+     }
+  .margin{
+      margin-left: 6rem;
+      margin-right: 6rem;
+     }
+  .margin form{
+    display: flex;
+      }
+  .timesection{
+    display: inline-block;
+    margin-left: 4px;
+  }
+  .timesection:first-child{
+    margin-left: 0;
+  }
+  .timesection>.value{
+    background-color: #1f3f70;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+  }
+  .time-label{
+    font-size: 11px;
+    padding-top: 4px;
+    text-align: center;
+  }
+}
